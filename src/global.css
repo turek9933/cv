@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+/*
+CALENDAR has its own CSS file
+/src/components/calendar/calendar.css
+*/
+
+
+@custom-variant light (&:where(.light, .light *));
+@custom-variant simple (&:where(.simple, .simple *));
+
+@theme {
+    /* --font-title: var(--font-heading), sans-serif;
+    --font-body: var(--font-body), sans-serif;
+    --font-simple: var(--font-simple), sans-serif; */
+
+    --color-primary: var(--primary-default);
+    --color-primary-hover: var(--primary-hover);
+    --color-primary-active: var(--primary-active);
+    --color-primary-subtle: var(--primary-subtle);
+
+    --color-accent: var(--accent-default);
+    --color-accent-hover: var(--accent-hover);
+    --color-accent-active: var(--accent-active);
+    --color-accent-subtle: var(--accent-subtle);
+
+    --color-bg: var(--bg-default);
+    --color-bg-muted: var(--bg-muted);
+    --color-bg-card: var(--bg-card);
+    --color-bg-active: var(--bg-active);
+    --color-bg-hover: var(--bg-hover);
+    --color-bg-contrast: var(--bg-contrast);
+
+    --color-border: var(--border-default);
+    --color-border-subtle: var(--border-subtle);
+    --color-border-hover: var(--border-hover);
+    --color-border-focus: var(--border-focus);
+    --color-border-error: var(--border-error);
+
+    --color-text: var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+    --color-text-muted: var(--text-muted);
+    --color-text-contrast: var(--text-contrast);
+    --color-text-link: var(--text-link);
+    --color-text-link-hover: var(--text-link-hover);
+
+    --color-success: var(--success-default);
+    --color-success-subtle: var(--success-subtle);
+    --color-success-contrast: var(--success-contrast);
+
+    --color-error: var(--error-default);
+    --color-error-subtle: var(--error-subtle);
+    --color-error-contrast: var(--error-contrast);
+}
+
+
+/**
+ * Color palette
+ */
+@layer base {
+
+    /* Base colors */
+    :root {
+        --green-100: #C8FFD2;
+        --green-200: #AFFEB5;
+        --green-300: #34E04D;
+        --green-400: #28B43C;
+        --green-500: #128C20;
+        --green-600: #0A6414;
+        --green-700: #043F09;
+        --green-800: #011D02;
+
+        /* --orange-100: #FFEDE6;
+        --orange-200: #FFC4A8;
+        --orange-300: #FF8C00;
+        --orange-400: #C86D00;
+        --orange-500: #944F00;
+        --orange-600: #633300;
+        --orange-700: #361900; */
+
+        /* --cyan-100: #00FFFF;
+        --cyan-200: #00D3D3;
+        --cyan-300: #00A9A9;
+        --cyan-400: #008080;
+        --cyan-500: #005A5A;
+        --cyan-600: #003636;
+        --cyan-700: #001515; */
+
+        /* --yellow-100: #FFFF00;
+        --yellow-200: #D5D500;
+        --yellow-300: #ADAD00;
+        --yellow-400: #868600;
+        --yellow-500: #626200;
+        --yellow-600: #3F3F00;
+        --yellow-700: #202000; */
+
+        --red-100: #FFECEC;
+        --red-200: #FFBABA;
+        --red-300: #FF7D7D;
+        --red-400: #FF0000;
+        --red-500: #BC0000;
+        --red-600: #7C0000;
+        --red-700: #430000;
+
+        --gray-100: #FFFFFF;
+        --gray-200: #D6D6D6;
+        --gray-300: #AFAFAF;
+        --gray-400: #898989;
+        --gray-500: #656565;
+        --gray-600: #434343;
+        --gray-700: #242424;
+        --gray-800: #000000;
+    }
+
+    /**
+   * SEMANTIC TOKENS - LIGHT THEME
+   */
+    :root {
+        --primary-default: var(--green-400);
+        --primary-hover: var(--green-300);
+        --primary-active: var(--green-200);
+        --primary-subtle: var(--green-700);
+
+        --bg-default: var(--gray-800);
+        --bg-muted: var(--gray-700);
+        --bg-card: var(--gray-600);
+        --bg-active: var(--gray-500);
+        --bg-hover: var(--gray-400);
+        --bg-contrast: var(--gray-200);
+
+        --border-default: var(--gray-600);
+        --border-subtle: var(--gray-700);
+        --border-hover: var(--gray-400);
+        --border-focus: var(--green-300);
+        --border-error: var(--red-300);
+
+        --text-primary: var(--gray-100);
+        --text-secondary: var(--gray-300);
+        --text-muted: var(--gray-400);
+        --text-contrast: var(--gray-800);
+        --text-link: var(--gray-300);
+        --text-linkhover: var(--gray-200);
+
+        --success-default: var(--green-300);
+        --success-subtle: var(--green-600);
+        --success-contrast: var(--gray-100);
+
+        --error-default: var(--red-300);
+        --error-subtle: var(--red-600);
+        --error-contrast: var(--gray-100);
+    }
+
+    /** 
+   * SEMANTIC TOKENS - LIGHT THEME
+   */
+    .light {
+        --primary-default: var(--green-500);
+        --primary-hover: var(--green-600);
+        --primary-active: var(--green-700);
+        --primary-subtle: var(--green-100);
+
+        --bg-default: var(--gray-100);
+        --bg-muted: var(--gray-200);
+        --bg-card: var(--gray-300);
+        --bg-active: var(--gray-400);
+        --bg-hover: var(--gray-500);
+        --bg-contrast: var(--gray-700);
+
+        --border-default: var(--gray-300);
+        --border-subtle: var(--gray-200);
+        --border-hover: var(--gray-500);
+        --border-focus: var(--green-500);
+        --border-error: var(--red-500);
+
+        --text-primary: var(--gray-800);
+        --text-secondary: var(--gray-600);
+        --text-muted: var(--gray-500);
+        --text-contrast: var(--gray-100);
+        --text-link: var(--gray-500);
+        --text-linkhover: var(--gray-600);
+
+        --success-default: var(--green-400);
+        --success-subtle: var(--green-100);
+        --success-contrast: var(--gray-100);
+
+        --error-default: var(--red-400);
+        --error-subtle: var(--red-100);
+        --error-contrast: var(--gray-100);
+    }
+
+    /**
+   * SEMANTIC TOKENS - SIMPLE THEME
+   */
+    .simple {
+        --primary-default: var(--green-500);
+        --primary-hover: var(--green-600);
+        --primary-active: var(--green-700);
+        --primary-subtle: var(--green-100);
+
+        --bg-default: var(--gray-400);
+        --bg-muted: var(--gray-500);
+        --bg-card: var(--gray-700);
+        --bg-active: var(--gray-400);
+        --bg-hover: var(--gray-400);
+        --bg-contrast: var(--gray-200);
+
+        --border-default: var(--gray-100);
+        --border-subtle: var(--gray-300);
+        --border-hover: var(--green-500);
+        --border-focus: var(--green-300);
+        --border-error: var(--red-300);
+
+        --text-primary: var(--gray-800);
+        --text-secondary: var(--gray-600);
+        --text-muted: var(--gray-500);
+        --text-contrast: var(--gray-100);
+        --text-link: var(--gray-500);
+        --text-linkhover: var(--gray-600);
+
+        --success-default: var(--green-100);
+        --success-subtle: var(--green-700);
+        --success-contrast: var(--gray-800);
+
+        --error-default: var(--red-300);
+        --error-subtle: var(--red-700);
+        --error-contrast: var(--gray-800);
+    }
+
+    /**
+   * BASE STYLES
+   */
+    body {
+        background-color: var(--bg-muted);
+        color: var(--text-primary);
+    }
+
+    a {
+        color: var(--text-link);
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: var(--text-link-hover);
+    }
+}
