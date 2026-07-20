@@ -1,0 +1,35 @@
+{
+    "landing": {
+        "heroTitle": "Witaj w aplikacji Tomek's CV!",
+        "heroSubtitle": "Zapraszam do zapoznania się z moimi kwalifikacjami.",
+        "learnMore": "Dowiedz się więcej",
+        "login": "Zaloguj się",
+        "register": "Zarejestruj się",
+        "aboutTitle": "O aplikacji",
+        "aboutDescription": "Prosta aplikacja stworzona dla ułatwienia zaprezentowania moich kwalifikacji potencjalnemu pracodawcy.",
+        "featuresTitle": "Możliwości",
+        "feature1Title": "Zarządzanie danymi",
+        "feature1Description": "Możliwość dodawania, edytowania i usuwania informacji o sobie.",
+        "feature2Title": "Prosty interfejs",
+        "feature2Description": "Intuicyjny i nowoczesny wygląd aplikacji.",
+        "feature3Title": "Zarządzanie projektami",
+        "feature3Description": "Możliwość dodawania i edytowania informacji o projektach.",
+        "feature4Title": "Zarządzanie edukacją",
+        "feature4Description": "Możliwość dodawania i edytowania informacji o edukacji.",
+        "feature5Title": "Zarządzanie umiejętnościami",
+        "feature5Description": "Możliwość dodawania i edytowania informacji o umiejętnościach.",
+        "feature6Title": "Zarządzanie doświadczeniem",
+        "feature6Description": "Możliwość dodawania i edytowania informacji o doświadczeniu.",
+        "callToAction": "Gotowy, żeby zacząć?",
+        "callToActionDescription": "Załóż konto i zacznij korzystać z aplikacji.",
+        "copyright": "Tomek's CV © 2026. Wszelkie prawa zastrzeżone.",
+        "privacyPolicy": "Polityka prywatności",
+        "terms": "Regulamin",
+        "contact": "Kontakt"
+    },
+    "themeToggle": {
+        "dark": "Ciemny",
+        "light": "Jasny",
+        "simple": "Prosty"
+    }
+}

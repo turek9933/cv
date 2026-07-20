@@ -1,0 +1,35 @@
+{
+    "landing": {
+        "heroTitle": "Welcome to Tomek's CV app!",
+        "heroSubtitle": "I invite you to get to know my qualifications.",
+        "learnMore": "Learn more",
+        "login": "Log in",
+        "register": "Register",
+        "aboutTitle": "About application",
+        "aboutDescription": "An application created to make it easier to present my qualifications to potential employers.",
+        "featuresTitle": "Features",
+        "feature1Title": "Data management",
+        "feature1Description": "Ability to add, edit and delete information about yourself.",
+        "feature2Title": "Simple interface",
+        "feature2Description": "Intuitive and modern application design.",
+        "feature3Title": "Project management",
+        "feature3Description": "Ability to add and edit information about projects.",
+        "feature4Title": "Education management",
+        "feature4Description": "Ability to add and edit information about education.",
+        "feature5Title": "Skills management",
+        "feature5Description": "Ability to add and edit information about skills.",
+        "feature6Title": "Experience management",
+        "feature6Description": "Ability to add and edit information about experience.",
+        "callToAction": "Ready to start?",
+        "callToActionDescription": "Create an account and start using the application.",
+        "copyright": "Tomek's CV © 2026. All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "contact": "Contact"
+    },
+    "themeToggle": {
+        "dark": "Dark",
+        "light": "Light",
+        "simple": "Simple"
+    }
+}

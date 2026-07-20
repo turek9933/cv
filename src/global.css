@@ -1,18 +1,13 @@
 @import "tailwindcss";
 
-/*
-CALENDAR has its own CSS file
-/src/components/calendar/calendar.css
-*/
-
-
 @custom-variant light (&:where(.light, .light *));
 @custom-variant simple (&:where(.simple, .simple *));
 
 @theme {
-    /* --font-title: var(--font-heading), sans-serif;
-    --font-body: var(--font-body), sans-serif;
-    --font-simple: var(--font-simple), sans-serif; */
+    --font-mono: var(--font-mono);
+    --font-sans: var(--font-sans);
+    --font-title: var(--font-mono);
+    --font-body: var(--font-mono);
 
     --color-primary: var(--primary-default);
     --color-primary-hover: var(--primary-hover);
@@ -192,6 +187,9 @@ CALENDAR has its own CSS file
    * SEMANTIC TOKENS - SIMPLE THEME
    */
     .simple {
+        --font-title: var(--font-sans);
+        --font-body: var(--font-sans);
+
         --primary-default: var(--green-500);
         --primary-hover: var(--green-600);
         --primary-active: var(--green-700);
