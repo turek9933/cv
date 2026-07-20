@@ -1,35 +1,120 @@
 {
-    "landing": {
-        "heroTitle": "Witaj w aplikacji Tomek's CV!",
-        "heroSubtitle": "Zapraszam do zapoznania się z moimi kwalifikacjami.",
-        "learnMore": "Dowiedz się więcej",
-        "login": "Zaloguj się",
-        "register": "Zarejestruj się",
-        "aboutTitle": "O aplikacji",
-        "aboutDescription": "Prosta aplikacja stworzona dla ułatwienia zaprezentowania moich kwalifikacji potencjalnemu pracodawcy.",
-        "featuresTitle": "Możliwości",
-        "feature1Title": "Zarządzanie danymi",
-        "feature1Description": "Możliwość dodawania, edytowania i usuwania informacji o sobie.",
-        "feature2Title": "Prosty interfejs",
-        "feature2Description": "Intuicyjny i nowoczesny wygląd aplikacji.",
-        "feature3Title": "Zarządzanie projektami",
-        "feature3Description": "Możliwość dodawania i edytowania informacji o projektach.",
-        "feature4Title": "Zarządzanie edukacją",
-        "feature4Description": "Możliwość dodawania i edytowania informacji o edukacji.",
-        "feature5Title": "Zarządzanie umiejętnościami",
-        "feature5Description": "Możliwość dodawania i edytowania informacji o umiejętnościach.",
-        "feature6Title": "Zarządzanie doświadczeniem",
-        "feature6Description": "Możliwość dodawania i edytowania informacji o doświadczeniu.",
-        "callToAction": "Gotowy, żeby zacząć?",
-        "callToActionDescription": "Załóż konto i zacznij korzystać z aplikacji.",
-        "copyright": "Tomek's CV © 2026. Wszelkie prawa zastrzeżone.",
-        "privacyPolicy": "Polityka prywatności",
-        "terms": "Regulamin",
+    "sections": {
+        "hero": "Hero",
+        "about": "O mnie",
+        "timeline": "Oś czasu",
+        "skills": "Umiejętności",
+        "projects": "Projekty",
         "contact": "Kontakt"
+    },
+    "hero": {
+        "greeting": "Cześć, jestem Tomasz",
+        "role": "Programista",
+        "prompt": "$ ./cv.sh"
+    },
+    "about": {
+        "shortBio": "Tworzę oprogramowanie, eksperymentuję z elektroniką i prowadzę własny homelab.",
+        "longBio": "Inżynier oprogramowania z pasją do budowania czystego, wydajnego kodu. Poza pracą zajmuję się projektami embedded, eksperymentami z układami cyfrowymi i utrzymaniem infrastruktury serwerowej w domowym centrum danych.",
+        "hobbies": ["Elektronika", "Homelab", "Systemy wbudowane", "Druk 3D", "DIY"]
+    },
+    "projects": [
+        {
+            "slug": "t-learning",
+            "title": "T-Learning",
+            "description": "Platforma do nauki języków obcych.",
+            "longDescription": "Aplikacja webowa do nauki języków z interaktywnymi lekcjami, systemem powtórek i śledzeniem postępów.",
+            "demoNote": "Demo: demo@example.com / password123",
+            "stack": ["React", "TypeScript", "Node.js", "PostgreSQL"],
+            "demoUrl": "https://t-learning.example.com",
+            "repoUrl": "https://github.com/tomek/t-learning"
+        },
+        {
+            "slug": "product-catalogue",
+            "title": "Product-Catalogue",
+            "description": "System zarządzania i prezentacji katalogu produktów.",
+            "longDescription": "Nowoczesny katalog produktów z wyszukiwarką full-text, filtrami i integracją z API zewnętrznych dostawców.",
+            "demoNote": "Demo: demo@example.com / password123",
+            "stack": ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
+            "demoUrl": "https://catalogue.example.com",
+            "repoUrl": "https://github.com/tomek/product-catalogue"
+        },
+        {
+            "slug": "rohan",
+            "title": "Rohan",
+            "description": "Aplikacja do zarządzania podróżami.",
+            "longDescription": "Aplikacja do planowania podróży, organizacji wydatków i dzielenia się wspomnieniami z innymi podróżnikami.",
+            "demoNote": "Demo: demo@example.com / password123",
+            "stack": ["React Native", "TypeScript", "Firebase"],
+            "demoUrl": "https://rohan.example.com",
+            "repoUrl": "https://github.com/tomek/rohan"
+        },
+        {
+            "slug": "docx-app",
+            "title": "DOCX-App",
+            "description": "Generator dokumentów DOCX w przeglądarce.",
+            "longDescription": "Aplikacja do generowania zaawansowanych dokumentów DOCX z szablonów, z podglądem na żywo i eksportem.",
+            "demoNote": "Demo: demo@example.com / password123",
+            "stack": ["React", "TypeScript", "Node.js", "AWS S3"],
+            "demoUrl": "https://docx.example.com",
+            "repoUrl": "https://github.com/tomek/docx-app"
+        }
+    ],
+    "timeline": [
+        {
+            "date": "2024-09",
+            "title": "Programista",
+            "subtitle": "Firma XYZ",
+            "description": "Rozwój aplikacji webowych i utrzymanie infrastruktury.",
+            "type": "work"
+        },
+        {
+            "date": "2023-03",
+            "title": "Praktyki programistyczne",
+            "subtitle": "Firma ABC",
+            "description": "Praca przy systemie raportowania danych.",
+            "type": "work"
+        },
+        {
+            "date": "2021-10",
+            "title": "Studia informatyczne",
+            "subtitle": "Politechnika",
+            "type": "education"
+        },
+        {
+            "date": "2020-06",
+            "title": "Pierwszy projekt open-source",
+            "subtitle": "GitHub",
+            "description": "Publikacja pierwszego narzędzia CLI na licencji MIT.",
+            "type": "milestone"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Frontend",
+            "items": ["TypeScript", "React", "Next.js", "Tailwind CSS", "React Native"]
+        },
+        {
+            "category": "Backend",
+            "items": ["Node.js", "Python", "PostgreSQL", "REST API", "GraphQL"]
+        },
+        {
+            "category": "DevOps / Infra",
+            "items": ["Docker", "Linux", "Nginx", "Cloudflare", "CI/CD"]
+        }
+    ],
+    "contact": {
+        "email": "tomasz@example.com",
+        "github": "https://github.com/tomek",
+        "linkedin": "https://linkedin.com/in/tomek",
+        "cvFile": "/cv/cv-pl.pdf"
     },
     "themeToggle": {
         "dark": "Ciemny",
         "light": "Jasny",
         "simple": "Prosty"
+    },
+    "footer": {
+        "copyright": "Tomek's CV © 2026. Wszelkie prawa zastrzeżone.",
+        "privacy": "Ta strona to portfolio osobiste. Wszystkie dane projektów są poglądowe. Strona nie używa cookies do śledzenia."
     }
 }
