@@ -6,7 +6,7 @@ import Projects from "@/components/sections/projects";
 import Skills from "@/components/sections/skills";
 import Timeline from "@/components/sections/timeline";
 import Contact from "@/components/sections/contact";
-import ThemeToggle from "@/components/ThemeToogle";
+import ThemeToggle from "@/components/ThemeToggle";
 import LanguageToggle from "@/components/LanguageToggle";
 
 export function generateStaticParams() {
@@ -23,23 +23,22 @@ export default async function LandingPage({
     const t = await getTranslations();
 
     return (
-        <div className="flex flex-col min-h-screen">
-            <header className="sticky top-0 z-50 border-b border-border bg-bg-default/80 backdrop-blur-sm">
-                <div className="container flex items-center justify-end gap-4 py-2">
+        <div className="px-4">
+            <header className="sticky top-0 z-50 border-b border-border bg-bg/10 backdrop-blur-sm">
+                <div className="container mx-auto flex items-center justify-between gap-4 p-2">
                     <LanguageToggle />
-                    <span className="w-px h-4 bg-border" />
                     <ThemeToggle />
                 </div>
             </header>
 
-            <main className="flex-1">
-                <section id="hero" className="py-12 lg:py-20 container">
+            <main>
+                <section id="hero" className="py-8 lg:py-12 mx-auto container">
                     <div className="max-w-4xl mx-auto text-center">
                         <Hero />
                     </div>
                 </section>
 
-                <section id="about" className="py-8 lg:py-10 container">
+                <section id="about" className="py-8 lg:py-10 mx-auto container">
                     <h2 className="text-xl lg:text-2xl font-title font-bold mb-8 text-center text-text">
                         {t("sections.about")}
                     </h2>
@@ -48,7 +47,7 @@ export default async function LandingPage({
                     </div>
                 </section>
 
-                <section id="projects" className="py-8 lg:py-10 container">
+                <section id="projects" className="py-8 lg:py-10 mx-auto container">
                     <h2 className="text-xl lg:text-2xl font-title font-bold mb-8 text-center text-text">
                         {t("sections.projects")}
                     </h2>
@@ -57,16 +56,7 @@ export default async function LandingPage({
                     </div>
                 </section>
 
-                <section id="skills" className="py-8 lg:py-10 container">
-                    <h2 className="text-xl lg:text-2xl font-title font-bold mb-8 text-center text-text">
-                        {t("sections.skills")}
-                    </h2>
-                    <div className="max-w-3xl mx-auto">
-                        <Skills />
-                    </div>
-                </section>
-
-                <section id="timeline" className="py-8 lg:py-10 container">
+                <section id="timeline" className="py-8 lg:py-10 mx-auto container">
                     <h2 className="text-xl lg:text-2xl font-title font-bold mb-8 text-center text-text">
                         {t("sections.timeline")}
                     </h2>
@@ -75,7 +65,16 @@ export default async function LandingPage({
                     </div>
                 </section>
 
-                <section id="contact" className="py-8 lg:py-10 container">
+                <section id="skills" className="py-8 lg:py-10 mx-auto container">
+                    <h2 className="text-xl lg:text-2xl font-title font-bold mb-8 text-center text-text">
+                        {t("sections.skills")}
+                    </h2>
+                    <div className="max-w-3xl mx-auto">
+                        <Skills />
+                    </div>
+                </section>
+
+                <section id="contact" className="py-8 lg:py-10 mx-auto container">
                     <h2 className="text-xl lg:text-2xl font-title font-bold mb-8 text-center text-text">
                         {t("sections.contact")}
                     </h2>
@@ -85,12 +84,22 @@ export default async function LandingPage({
                 </section>
             </main>
 
-            <footer className="border-t border-border mt-16">
-                <div className="container py-4 text-center">
-                    <p className="text-xs text-text-muted">
+            <footer className="border-t border-border mt-12">
+                <div className="mx-auto container py-4 text-center">
+                    <p className="text-sm font-body text-text-secondary">
                         {t("footer.copyright")}
                     </p>
-                    <p className="text-xs text-text-muted mt-1">
+                    <div className="flex gap-3 justify-center font-body text-xs mt-1">
+                        <a
+                            href={t("footer.sourceCodeUrl")}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-text-link hover:text-text-link-hover hover:underline transition-colors"
+                        >
+                            {t("footer.sourceCode")}
+                        </a>
+                    </div>
+                    <p className="text-xs font-body  text-text-muted mt-1">
                         {t("footer.privacy")}
                     </p>
                 </div>

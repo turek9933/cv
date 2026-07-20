@@ -37,11 +37,11 @@ export default function ProjectsSimple() {
                         {project.demoNote}
                     </p>
 
-                    <div className="flex flex-wrap gap-1.5 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-4">
                         {project.stack.map((tech) => (
                             <span
                                 key={tech}
-                                className="text-xs bg-bg-muted text-text-secondary rounded px-2 py-0.5"
+                                className="text-xs bg-bg-muted text-text-secondary rounded px-2 py-1 hover:text-text-contrast hover:bg-primary transition-colors"
                             >
                                 {tech}
                             </span>
@@ -49,19 +49,19 @@ export default function ProjectsSimple() {
                     </div>
 
                     <div className="flex gap-3 text-sm">
-                        <a
+                        {project.demoUrl && <a
                             href={project.demoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-primary hover:underline font-medium"
+                            className="text-primary hover:underline font-medium hover:text-text-link-hover transition-colors"
                         >
                             Live Demo
-                        </a>
+                        </a>}
                         <a
                             href={project.repoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-text-link hover:underline"
+                            className="text-text-link hover:underline font-medium hover:text-text-link-hover transition-colors"
                         >
                             Source Code
                         </a>

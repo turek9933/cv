@@ -7,6 +7,7 @@ type Project = {
     description: string
     longDescription: string
     demoNote: string
+    date: string
     stack: string[]
     demoUrl: string
     repoUrl: string
@@ -27,12 +28,9 @@ export default function ProjectsTerminal() {
                         <span className="text-primary">commit</span>{" "}
                         <span className="text-text-secondary">{project.slug}</span>
                     </p>
-                    <p className="text-xs text-text-muted mb-1">
-                        <span className="text-primary">Author:</span> {project.title}
-                    </p>
                     <p className="text-xs text-text-muted mb-3">
-                        <span className="text-primary">Date:</span>{" "}
-                        {project.description}
+                        <span className="text-primary">date:</span>{" "}
+                        {project.date}
                     </p>
 
                     <p className="text-sm text-text-secondary mb-2 ml-4 border-l-2 border-border pl-3">
@@ -40,14 +38,14 @@ export default function ProjectsTerminal() {
                     </p>
 
                     <p className="text-xs text-text-muted mb-3 ml-4 border-l-2 border-border pl-3">
-                        <span className="text-yellow-500">!</span> {project.demoNote}
+                        {project.demoNote}
                     </p>
 
                     <div className="flex flex-wrap gap-2 mb-3">
                         {project.stack.map((tech) => (
                             <span
                                 key={tech}
-                                className="text-xs text-primary border border-primary/30 rounded-sm px-2 py-0.5"
+                                className="text-xs text-primary border border-primary/30 rounded-sm px-2 py-1 hover:text-text-contrast hover:bg-primary transision-colors"
                             >
                                 {tech}
                             </span>
@@ -55,19 +53,19 @@ export default function ProjectsTerminal() {
                     </div>
 
                     <div className="flex gap-3 text-xs">
-                        <a
+                        {project.demoUrl && <a
                             href={project.demoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-text-link hover:text-primary transition-colors underline underline-offset-2 decoration-dotted"
+                            className="text-text-link hover:text-text-link-hover hover:font-bold transition-colors underline underline-offset-2 decoration-dotted"
                         >
                             [demo]
-                        </a>
+                        </a>}
                         <a
                             href={project.repoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-text-link hover:text-primary transition-colors underline underline-offset-2 decoration-dotted"
+                            className="text-text-link hover:text-text-link-hover hover:font-bold transition-colors underline underline-offset-2 decoration-dotted"
                         >
                             [repo]
                         </a>

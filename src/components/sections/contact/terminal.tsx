@@ -22,20 +22,20 @@ export default function ContactTerminal() {
             {links.map((link) => (
                 <p key={link.cmd} className="text-sm">
                     <span className="text-primary">$</span> echo{" "}
-                    <span className="text-text-muted">~/.contacts/{link.cmd}</span>
+                    <span className="text-text-muted">~/.contact/{link.cmd}</span>
                     <br />
                     <a
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-text-link hover:text-primary transition-colors ml-4 underline underline-offset-2 decoration-dotted"
+                        className="text-text-link hover:text-text-link-hover transition-colors ml-4 underline underline-offset-3 decoration-dotted"
                     >
                         {link.label}
                     </a>
                 </p>
             ))}
 
-            <div className="mt-6 pt-4 border-t border-border">
+            <div className="mt-4 pt-2 border-t border-border">
                 <p className="text-sm">
                     <span className="text-primary">$</span> cat cv.pdf
                     <br />
@@ -43,7 +43,7 @@ export default function ContactTerminal() {
                         href={contact.cvFile}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:underline ml-4"
+                        className="ml-4 text-primary hover:underline hover:text-primary-hover decoration-dotted underline-offset-3 transition-colors"
                     >
                         [download]
                     </a>

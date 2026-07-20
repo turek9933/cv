@@ -2,7 +2,8 @@
 import { useMessages } from "next-intl"
 
 type TimelineItem = {
-    date: string
+    dateStart: string
+    dateEnd: string
     title: string
     subtitle: string
     description?: string
@@ -17,10 +18,10 @@ export default function TimelineSimple() {
         <div className="space-y-6">
             {items.map((item, i) => (
                 <div key={i} className="relative pl-6 border-l-2 border-border last:pb-0">
-                    <div className="absolute -left-2 top-0.5 w-3.5 h-3.5 rounded-full bg-primary" />
+                    <div className="absolute -left-1.75 top-0 w-3 h-3 rounded-full bg-primary" />
 
-                    <p className="text-xs text-text-muted mb-0.5">
-                        {item.date}
+                    <p className="text-xs text-text-muted">
+                        {item.dateStart} - {item.dateEnd}
                     </p>
 
                     <h3 className="text-base font-semibold text-text">

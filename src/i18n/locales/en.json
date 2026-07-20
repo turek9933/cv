@@ -1,6 +1,5 @@
 {
     "sections": {
-        "hero": "Hero",
         "about": "About",
         "timeline": "Timeline",
         "skills": "Skills",
@@ -9,112 +8,146 @@
     },
     "hero": {
         "greeting": "Hi, I'm Tomasz",
-        "role": "Software Developer",
-        "prompt": "$ ./cv.sh"
+        "role": "Bachelor of Science in CS",
+        "prompt": " ./cv.sh"
     },
     "about": {
         "shortBio": "I build software, tinker with electronics, and run my own homelab.",
-        "longBio": "Software engineer with a passion for building clean, performant code. Outside of work, I enjoy embedded projects, digital electronics experiments, and maintaining server infrastructure in my home data center.",
-        "hobbies": ["Electronics", "Homelab", "Embedded systems", "3D printing", "DIY"]
+        "longBio": "Software engineer specializing in web and mobile application development. I also work with smartphones (diagnostics and hardware builds), microcontrollers, and maintaining server infrastructure in my home homelab.",
+        "interests": "Interests",
+        "hobbies": ["Electronics", "Homelab", "Embedded systems", "Smartphones", "DIY"]
     },
     "projects": [
         {
             "slug": "t-learning",
             "title": "T-Learning",
-            "description": "Foreign language learning platform.",
-            "longDescription": "Web application for language learning with interactive lessons, spaced repetition, and progress tracking.",
-            "demoNote": "Demo: demo@example.com / password123",
-            "stack": ["React", "TypeScript", "Node.js", "PostgreSQL"],
-            "demoUrl": "https://t-learning.example.com",
-            "repoUrl": "https://github.com/tomek/t-learning"
-        },
-        {
-            "slug": "product-catalogue",
-            "title": "Product-Catalogue",
-            "description": "Product catalogue management and presentation system.",
-            "longDescription": "Modern product catalogue with full-text search, filters, and external supplier API integration.",
-            "demoNote": "Demo: demo@example.com / password123",
-            "stack": ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
-            "demoUrl": "https://catalogue.example.com",
-            "repoUrl": "https://github.com/tomek/product-catalogue"
+            "description": "Modular educational PWA platform.",
+            "longDescription": "Educational platform with a workspace system, invitations, and OAuth authorization.",
+            "demoNote": "Demo: jan.nowak@example.com / hardPassword89",
+            "date": "06.2026",
+            "stack": ["Next.js", "Elysia (Bun)", "TypeScript", "Drizzle ORM", "PostgreSQL", "MinIO", "Better Auth", "Docker Compose"],
+            "demoUrl": "https://t-learning.tomaszturek.fit",
+            "repoUrl": "https://github.com/turek9933/T-Learning"
         },
         {
             "slug": "rohan",
             "title": "Rohan",
-            "description": "Travel management application.",
-            "longDescription": "Travel planning app for organizing expenses, itineraries, and sharing memories with fellow travelers.",
-            "demoNote": "Demo: demo@example.com / password123",
-            "stack": ["React Native", "TypeScript", "Firebase"],
-            "demoUrl": "https://rohan.example.com",
-            "repoUrl": "https://github.com/tomek/rohan"
+            "description": "Mobile task list with gamification.",
+            "longDescription": "Advanced task list (quests) with three custom themes, gamification and offline mode.",
+            "demoNote": "Demo: mateusz@onet.pl / kinddaHardPass49",
+            "date": "06.2025",
+            "stack": ["React Native", "Expo", "TypeScript", "Firebase Auth", "Firestore", "Tamagui", "Jest", "AsyncStorage"],
+            "demoUrl": "https://rohan.tomaszturek.fit",
+            "repoUrl": "https://github.com/turek9933/Rohan"
+        },
+        {
+            "slug": "questions",
+            "title": "Questions",
+            "description": "AI-powered spaced-repetition study application.",
+            "longDescription": "Web application for engineering exam preparation with weighted question selection, AI answer evaluation (Google Gemini), multi-session support and progress statistics.",
+            "date": "07.2026",
+            "stack": ["Next.js 16", "TypeScript", "Turso (SQLite)", "Google Gemini API", "Tailwind CSS v4", "shadcn/ui", "Bun"],
+            "demoUrl": "https://questions.tomaszturek.fit",
+            "repoUrl": "https://github.com/turek9933/questions"
+        },
+        {
+            "slug": "product-catalogue",
+            "title": "Product-Catalogue",
+            "description": "Fullstack product catalogue with cart and payments.",
+            "longDescription": "Product catalogue with cart, orders, and PayPal sandbox payment.",
+            "demoNote": "Demo admin: admin / adminHardPassword04 | Demo user: michal / michalNotThatHardPassword43",
+            "date": "12.2024",
+            "stack": ["React", "Vite", "FastAPI", "MySQL", "MinIO", "Docker Compose", "i18n (PL/EN)", "Light/dark themes"],
+            "demoUrl": "https://catalogue.tomaszturek.fit",
+            "repoUrl": "https://github.com/turek9933/Product-Catalogue"
         },
         {
             "slug": "docx-app",
             "title": "DOCX-App",
-            "description": "DOCX document generator in the browser.",
-            "longDescription": "Application for generating advanced DOCX documents from templates with live preview and export.",
-            "demoNote": "Demo: demo@example.com / password123",
-            "stack": ["React", "TypeScript", "Node.js", "AWS S3"],
-            "demoUrl": "https://docx.example.com",
-            "repoUrl": "https://github.com/tomek/docx-app"
+            "description": "Desktop DOCX document generator.",
+            "longDescription": "Desktop tool for bulk generation of certificates and .docx documents.",
+            "date": "05.2024",
+            "stack": ["Python", "Tkinter", "python-docx"],
+            "repoUrl": "https://github.com/turek9933/DOCX-App"
+        },
+        {
+            "slug": "echonotes",
+            "title": "EchoNotes",
+            "description": "PWA for speech recognition and synthesis.",
+            "longDescription": "Simple PWA using in-browser speech recognition and synthesis.",
+            "date": "12.2025",
+            "stack": ["JavaScript", "Web Speech API"],
+            "demoUrl": "http://echonotespwa.netlify.app/",
+            "repoUrl": "https://github.com/turek9933/EchoNotesPWA"
         }
     ],
     "timeline": [
         {
-            "date": "2024-09",
-            "title": "Software Developer",
-            "subtitle": "Company XYZ",
-            "description": "Web application development and infrastructure maintenance.",
-            "type": "work"
-        },
-        {
-            "date": "2023-03",
-            "title": "Software Internship",
-            "subtitle": "Company ABC",
-            "description": "Worked on a data reporting system.",
-            "type": "work"
-        },
-        {
-            "date": "2021-10",
-            "title": "Computer Science Studies",
-            "subtitle": "University of Technology",
+            "dateStart": "10.2022",
+            "dateEnd": "07.2026",
+            "title": "Computer Science Studies (Engineering)",
+            "subtitle": "Technical university in Warsaw",
             "type": "education"
         },
         {
-            "date": "2020-06",
-            "title": "First open-source project",
-            "subtitle": "GitHub",
-            "description": "Published first CLI tool under MIT license.",
-            "type": "milestone"
+            "dateStart": "07.2024",
+            "dateEnd": "09.2024",
+            "title": "Web Developer Intern",
+            "subtitle": "Web agency (remote)",
+            "description": "WordPress site implementation and optimization, SEO basics.",
+            "type": "work"
+        },
+        {
+            "dateStart": "07.2025",
+            "dateEnd": "11.2025",
+            "title": "IT Hardware Technician",
+            "subtitle": "IT service company",
+            "description": "Hardware diagnostics and upgrades, IT equipment inventory management.",
+            "type": "work"
         }
     ],
     "skills": [
         {
-            "category": "Frontend",
-            "items": ["TypeScript", "React", "Next.js", "Tailwind CSS", "React Native"]
+            "category": "frontend",
+            "items": ["JavaScript", "TypeScript", "React", "React Native", "HTML", "CSS"]
         },
         {
-            "category": "Backend",
-            "items": ["Node.js", "Python", "PostgreSQL", "REST API", "GraphQL"]
+            "category": "backend",
+            "items": ["Python (FastAPI)", "TypeScript (Elysia/Bun)", "Node.js", "Drizzle ORM", "SQL (MySQL, PostgreSQL)", "REST API"]
         },
         {
-            "category": "DevOps / Infra",
-            "items": ["Docker", "Linux", "Nginx", "Cloudflare", "CI/CD"]
+            "category": "tools",
+            "items": ["Docker", "Git", "GitHub", "Firebase", "MinIO", "Expo", "Bash", "Better Auth"]
+        },
+        {
+            "category": "other",
+            "items": ["Raspberry Pi", "Electronics (diagnostics)", "WordPress", "Figma"]
+        },
+        {
+            "category": "languages",
+            "items": ["Polish - Native", "English - B1/B2"]
         }
     ],
     "contact": {
-        "email": "tomasz@example.com",
-        "github": "https://github.com/tomek",
-        "linkedin": "https://linkedin.com/in/tomek",
+        "email": "tomasz.turek.02@gmail.com",
+        "github": "https://github.com/turek9933",
+        "linkedin": "https://www.linkedin.com/in/tomasz-turek-646a2b214/",
+        "download": "Download CV",
         "cvFile": "/cv/cv-en.pdf"
     },
     "themeToggle": {
+        "label": "Theme",
         "dark": "Dark",
         "light": "Light",
         "simple": "Simple"
     },
+    "language": {
+        "label": "Language"
+    },
     "footer": {
         "copyright": "Tomek's CV © 2026. All rights reserved.",
-        "privacy": "This website is a personal portfolio. All project data shown is demonstrative. No cookies are used for tracking."
+        "privacy": "This portfolio is for informational purposes only and presents selected information about my experience and projects. I do not consent to the use, copying, or processing of the content and personal data contained herein for any purpose other than familiarizing yourself with my work. The data presented in the project demonstrations is illustrative or fictional.",
+        "sourceCode": "Website source code",
+        "sourceCodeUrl": "https://github.com/turek9933/cv"
     }
 }

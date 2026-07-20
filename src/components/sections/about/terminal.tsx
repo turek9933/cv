@@ -2,9 +2,9 @@
 import { useTranslations } from "next-intl"
 
 export default function AboutTerminal() {
-    const t = useTranslations()
+    const t = useTranslations("about")
 
-    const hobbies = t.raw("about.hobbies") as string[]
+    const hobbies = t.raw("hobbies") as string[]
 
     return (
         <div className="font-mono">
@@ -14,10 +14,10 @@ export default function AboutTerminal() {
 
             <div className="border-l-2 border-border pl-4 space-y-3">
                 <p className="text-sm text-text-secondary leading-relaxed">
-                    {t("about.shortBio")}
+                    {t("shortBio")}
                 </p>
                 <p className="text-sm text-text-secondary leading-relaxed">
-                    {t("about.longBio")}
+                    {t("longBio")}
                 </p>
             </div>
 
