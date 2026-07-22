@@ -1,5 +1,5 @@
 "use client"
-import { useMessages } from "next-intl"
+import { useMessages, useTranslations } from "next-intl"
 
 type Project = {
     slug: string
@@ -13,6 +13,7 @@ type Project = {
 }
 
 export default function ProjectsSimple() {
+    const t = useTranslations("common")
     const messages = useMessages()
     const projects = (messages as any).projects as Project[]
 
@@ -55,16 +56,16 @@ export default function ProjectsSimple() {
                             rel="noopener noreferrer"
                             className="text-primary hover:underline font-medium hover:text-text-link-hover transition-colors"
                         >
-                            Live Demo
+                            {t("demo")}
                         </a>}
-                        <a
+                        {project.repoUrl && <a
                             href={project.repoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-text-link hover:underline font-medium hover:text-text-link-hover transition-colors"
                         >
-                            Source Code
-                        </a>
+                            {t("source")}
+                        </a>}
                     </div>
                 </div>
             ))}

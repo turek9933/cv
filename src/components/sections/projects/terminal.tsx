@@ -61,14 +61,14 @@ export default function ProjectsTerminal() {
                         >
                             [demo]
                         </a>}
-                        <a
+                        {project.repoUrl && <a
                             href={project.repoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-text-link hover:text-text-link-hover hover:font-bold transition-colors underline underline-offset-2 decoration-dotted"
                         >
                             [repo]
-                        </a>
+                        </a>}
                     </div>
                 </div>
             ))}

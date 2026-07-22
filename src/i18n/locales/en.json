@@ -17,6 +17,10 @@
         "interests": "Interests",
         "hobbies": ["Electronics", "Homelab", "Embedded systems", "Smartphones", "DIY"]
     },
+    "common": {
+        "demo": "Live demo",
+        "source": "Source code"
+    },
     "projects": [
         {
             "slug": "t-learning",
@@ -79,6 +83,14 @@
             "stack": ["JavaScript", "Web Speech API"],
             "demoUrl": "http://echonotespwa.netlify.app/",
             "repoUrl": "https://github.com/turek9933/EchoNotesPWA"
+        },
+        {
+            "slug": "homelab",
+            "title": "Homelab",
+            "description": "Server hosting portfolio projects.",
+            "longDescription": "My own server infrastructure (NixOS) hosting portfolio projects. Public access via Cloudflare Tunnel, reverse proxy Caddy routing subdomains to services in Docker Compose.",
+            "date": "07.2026",
+            "stack": ["NixOS", "Docker Compose", "Cloudflare Tunnel", "Caddy", "Tailscale"]
         }
     ],
     "timeline": [

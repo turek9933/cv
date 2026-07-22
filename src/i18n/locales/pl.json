@@ -17,6 +17,10 @@
         "interests": "Zainteresowania",
         "hobbies": ["Elektronika", "Homelab", "Systemy wbudowane", "Smartfony", "DIY"]
     },
+    "common": {
+        "demo": "Aktualne demo",
+        "source": "Kod źródłowy"
+    },
     "projects": [
         {
             "slug": "t-learning",
@@ -76,9 +80,17 @@
             "description": "PWA do rozpoznawania i syntezy mowy.",
             "longDescription": "Prosta aplikacja PWA wykorzystująca rozpoznawanie i syntezę mowy w przeglądarce.",
             "date": "12.2025",
-            "stack": ["JavaScript", "Web Speech APomoI"],
+            "stack": ["JavaScript", "Web Speech API"],
             "demoUrl": "http://echonotespwa.netlify.app/",
             "repoUrl": "https://github.com/turek9933/EchoNotesPWA"
+        },
+        {
+            "slug": "homelab",
+            "title": "Homelab",
+            "description": "Serwer hostujący projekty portfolio.",
+            "longDescription": "Własna infrastruktura serwerowa (NixOS) hostująca projekty portfolio. Publiczny dostęp przez Cloudflare Tunnel, reverse proxy Caddy routujący subdomeny do usług w Docker Compose.",
+            "date": "07.2026",
+            "stack": ["NixOS", "Docker Compose", "Cloudflare Tunnel", "Caddy", "Tailscale"]
         }
     ],
     "timeline": [
