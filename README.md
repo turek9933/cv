@@ -116,6 +116,30 @@ Strona będzie dostępna pod adresem [http://localhost:3000](http://localhost:30
 docker compose down
 ```
 
+### Aktualizacja aplikacji
+
+Kiedy działa Ci już serwis Docker ze starszą wersją aplikacji i chcesz go zaktualizować, wykonaj następujące kroki:
+
+1. Wylistuj swoje działające procesy:
+```bash
+$ docker ps | grep cv
+```
+
+2. Znajdź na liście aplikację i zatrzymaj jej działanie
+```bash
+$ docker stop 92bf9db10a7b
+```
+
+3. Usuń stary obraz aplikacji 
+```bash
+$ docker rm 92bf9db10a7b
+```
+
+4. Zbuduj i wystartuj nowy obraz
+```bash
+$ docker compose up -d --build --no-deps
+```
+
 ### Uwagi
 
 - Port 3000 w kompozycji mapuje na port 80 kontenera (nginx).
@@ -252,6 +276,31 @@ The site will be available at [http://localhost:3000](http://localhost:3000).
 ```bash
 docker compose down
 ```
+
+### Application upgrade
+
+When you have working Docker service with old app version and you want to upgrade it, do these steps:
+
+1. List working Docker processes:
+```bash
+$ docker ps | grep cv
+```
+
+2. Find app on the list and stop it
+```bash
+$ docker stop 92bf9db10a7b
+```
+
+3. Delete old app image
+```bash
+$ docker rm 92bf9db10a7b
+```
+
+4. Build and start new version of the app
+```bash
+$ docker compose up -d --build --no-deps
+```
+
 
 ### Notes
 
