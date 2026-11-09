@@ -15,7 +15,7 @@
         "shortBio": "Tworzę oprogramowanie, eksperymentuję z elektroniką i prowadzę własny homelab.",
         "longBio": "Inżynier oprogramowania ze specjalizacją w tworzeniu aplikacji webowych i mobilnych. Zajmuję się smartfonami (diagnostyka i budowa sprzętu), mikrokontrolerami i utrzymaniem infrastruktury serwerowej w domowym homelabie.",
         "interests": "Zainteresowania",
-        "hobbies": ["Elektronika", "Homelab", "Systemy wbudowane", "Smartfony", "DIY"]
+        "hobbies": ["Elektronika", "Siłownia", "Homelab", "Systemy wbudowane", "Smartfony", "DIY", "Piłka nożna", "Historia", "Gry komputerowe"]
     },
     "common": {
         "demo": "Aktualne demo",
@@ -95,11 +95,44 @@
     ],
     "timeline": [
         {
+            "dateStart": "10.2026",
+            "dateEnd": "03.2028",
+            "title": "Studia magisterskie - Informatyka",
+            "subtitle": "Prywatny Uniwersytet w Warszawie",
+            "description": "Bezpieczeństwo systemów informacyjno-komunikacyjnych",
+            "type": "education"
+        },
+        {
             "dateStart": "10.2022",
             "dateEnd": "07.2026",
             "title": "Studia inżynierskie - Informatyka",
-            "subtitle": "Uczelnia techniczna w Warszawie",
+            "subtitle": "Inny prywatny Uniwersytet w Warszawie",
+            "description": "Tworzenie aplikacji webowych | Projektowanie aplikacji mobilnych",
             "type": "education"
+        },
+        {
+            "dateStart": "07.2025",
+            "dateEnd": "11.2025",
+            "title": "Serwisant sprzętu komputerowego",
+            "subtitle": "Firma serwisowa IT",
+            "description": "Diagnostyka i modernizacja sprzętu komputerowego, obsługa magazynu IT.",
+            "type": "work"
+        },
+        {
+            "dateStart": "07.2021",
+            "dateEnd": "06.2025",
+            "title": "Korepetytor matematyki",
+            "subtitle": "Ogólnopolska firma korepetytorska",
+            "description": "Prowadzenie indywidualnych zajęć przygotowawczych, głównie do matury rozszerzonej. Raportowanie i ewaluacja wyników nauczania.",
+            "type": "work"
+        },
+        {
+            "dateStart": "10.2022",
+            "dateEnd": "04.2024",
+            "title": "Asystent koordynatora projektów - doraźnie",
+            "subtitle": "Fundacja koordynująca program Erasmus dla szkół",
+            "description": "Przygotowywanie dokumentacji, Komunikacja z przedstawicielami szkół, okazjonalne prowadzenie zajęć przygotowawczych dla uczestników przed wyjazdem",
+            "type": "work"
         },
         {
             "dateStart": "07.2024",
@@ -110,11 +143,11 @@
             "type": "work"
         },
         {
-            "dateStart": "07.2025",
-            "dateEnd": "11.2025",
-            "title": "Serwisant sprzętu komputerowego",
-            "subtitle": "Firma serwisowa IT",
-            "description": "Diagnostyka i modernizacja sprzętu komputerowego, obsługa magazynu IT.",
+            "dateStart": "",
+            "dateEnd": "",
+            "title": "Naprawy i diagnostyka",
+            "subtitle": "Poza etatem",
+            "description": "Wymiana ekranów, baterii, złączy w telefonach oraz podzespołów w laptopach. Praca z multimetrem, stacją lutowniczą i opalarką przy demontażu i naprawie urządzeń",
             "type": "work"
         }
     ],

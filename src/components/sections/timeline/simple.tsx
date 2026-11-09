@@ -1,23 +1,16 @@
 "use client"
 import { useMessages } from "next-intl"
+import { TimelineType, TimelineItem } from "."
 
-type TimelineItem = {
-    dateStart: string
-    dateEnd: string
-    title: string
-    subtitle: string
-    description?: string
-    type: "education" | "work" | "milestone"
-}
-
-export default function TimelineSimple() {
+export default function TimelineSimple({ type = "work" }: { type?: TimelineType }) {
     const messages = useMessages()
-    const items = (messages as any).timeline as TimelineItem[]
+    const items = ((messages as any).timeline as TimelineItem[])
+        .filter((item) => item.type === type)
 
     return (
         <div className="space-y-6">
             {items.map((item, i) => (
-                <div key={i} className="relative pl-6 border-l-2 border-border last:pb-0">
+                <div key={i} className="relative pl-6 pr-3 border-l-2 border-border last:pb-0">
                     <div className="absolute -left-1.75 top-0 w-3 h-3 rounded-full bg-primary" />
 
                     <p className="text-xs text-text-muted">

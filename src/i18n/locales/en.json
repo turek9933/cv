@@ -15,7 +15,7 @@
         "shortBio": "I build software, tinker with electronics, and run my own homelab.",
         "longBio": "Software engineer specializing in web and mobile application development. I also work with smartphones (diagnostics and hardware builds), microcontrollers, and maintaining server infrastructure in my home homelab.",
         "interests": "Interests",
-        "hobbies": ["Electronics", "Homelab", "Embedded systems", "Smartphones", "DIY"]
+        "hobbies": ["Electronics", "Gym", "Homelab", "Embedded systems", "Smartphones", "DIY", "Football", "History", "Video games"]
     },
     "common": {
         "demo": "Live demo",
@@ -95,11 +95,44 @@
     ],
     "timeline": [
         {
+            "dateStart": "10.2026",
+            "dateEnd": "03.2028",
+            "title": "Computer Science Studies (Master's Degree)",
+            "subtitle": "Private University in Warsaw",
+            "description": "Security of Information and Communication Systems",
+            "type": "education"
+        },
+        {
             "dateStart": "10.2022",
             "dateEnd": "07.2026",
             "title": "Computer Science Studies (Engineering)",
-            "subtitle": "Technical university in Warsaw",
+            "subtitle": "Another Private University in Warsaw",
+            "description": "Web Application Development | Mobile Application Design",
             "type": "education"
+        },
+        {
+            "dateStart": "07.2025",
+            "dateEnd": "11.2025",
+            "title": "IT Hardware Technician",
+            "subtitle": "IT service company",
+            "description": "Hardware diagnostics and upgrades, IT equipment inventory management.",
+            "type": "work"
+        },
+        {
+            "dateStart": "07.2021",
+            "dateEnd": "06.2025",
+            "title": "Math Tutor",
+            "subtitle": "Nationwide tutoring company",
+            "description": "Conducting individual preparatory classes, primarily for the advanced high school graduation exam. Reporting and evaluating teaching results.",
+            "type": "work"
+        },
+        {
+            "dateStart": "10.2022",
+            "dateEnd": "04.2024",
+            "title": "Math Tutor",
+            "subtitle": "Project Coordinator Assistant - on an ad hoc basis",
+            "description": "Preparing documentation, communicating with school representatives, and occasionally conducting preparatory classes for participants before their departure",
+            "type": "work"
         },
         {
             "dateStart": "07.2024",
@@ -110,11 +143,11 @@
             "type": "work"
         },
         {
-            "dateStart": "07.2025",
-            "dateEnd": "11.2025",
-            "title": "IT Hardware Technician",
-            "subtitle": "IT service company",
-            "description": "Hardware diagnostics and upgrades, IT equipment inventory management.",
+            "dateStart": "",
+            "dateEnd": "",
+            "title": "Repairs and Diagnostics",
+            "subtitle": "Freelance",
+            "description": "Replacement of screens, batteries, and connectors in cell phones, as well as components in laptops. Working with a multimeter, soldering station, and heat gun when disassembling and repairing devices",
             "type": "work"
         }
     ],

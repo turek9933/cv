@@ -56,12 +56,14 @@ export default async function LandingPage({
                     </div>
                 </section>
 
-                <section id="timeline" className="py-8 lg:py-10 mx-auto container">
+                <section id="timeline" className="py-8 lg:py-10 mx-full">
                     <h2 className="text-xl lg:text-2xl font-title font-bold mb-8 text-center text-text">
                         {t("sections.timeline")}
                     </h2>
-                    <div className="max-w-2xl mx-auto">
-                        <Timeline />
+                    <div className="flex flex-col md:flex-row max-w-4xl mx-auto justify-between [&>*:last-child]:max-w-lg">
+                        <Timeline type="education"/>
+                        <div className="flex h-16 md:hidden" />
+                        <Timeline type="work"/>
                     </div>
                 </section>
 
